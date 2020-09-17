@@ -1,0 +1,82 @@
+input{
+	margin:10px 0px !important;
+}
+.form-signin {
+	width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+}
+.fulldesk {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fulldesk video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fulldesk .container {
+  position: relative;
+  z-index: 2;
+}
+
+.fulldesk .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+html, body {
+  font-family: arial;
+  padding: 0;
+  margin: 0;
+}
+#page-header, #page-body, #page-footer {
+  padding: 10px;
+}
+#page-header {
+  background: #FFD8D8;
+}
+#page-footer {
+  background: #D8EFFF;
+}
+#page-nav {
+  background: #E7FFD8;
+}
+#page-nav a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #E2F9D2;
+  text-decoration: none;
+  color: #678A50;
+  clear: both;
+}
+@media (pointer: coarse) and (hover: none) {
+  .fulldesk {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
