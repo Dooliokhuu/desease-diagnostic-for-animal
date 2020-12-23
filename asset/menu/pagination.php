@@ -1,14 +1,14 @@
 <?php 
 
 
-    $q = "SELECT count(*) as `counter` FROM `question_id` ORDER BY `id` ASC";
+    $q = "SELECT count(*) as `counter` FROM `question_id` ORDER BY `question_extra` ASC";
     $qc = mysqli_query($con,$q);
     if($c) {
         if($t = mysqli_fetch_assoc($c)) {
             $counter = $t['counter'];
         }
     }
-    $a = "SELECT count(*) as `counter` FROM `answer_id` ORDER BY `id` ASC";
+    $a = "SELECT count(*) as `counter` FROM `answer_id` ORDER BY `q_id` ASC";
     $ac = mysqli_query($con,$a);
     if($c) {
         if($t = mysqli_fetch_assoc($c)) {
@@ -29,8 +29,8 @@
     }
 
 
-    $q = "SELECT * FROM `answer_id` ORDER BY `id` ASC LIMIT ".$startrow.",".$max.";";
-    $a = "SELECT * FROM `answer_id` ORDER BY `id` ASC LIMIT ".$startrow.",".$max.";";
+    $q = "SELECT * FROM `question_id` ORDER BY `question_extra` ASC LIMIT ".$startrow.",".$max.";";
+    $a = "SELECT * FROM `answer_id` ORDER BY `q_id` ASC LIMIT ".$startrow.",".$max.";";
     $rq = mysqli_query($con,$q);
     $ra = mysqli_query($con,$a);
 ?>

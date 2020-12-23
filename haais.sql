@@ -115,11 +115,11 @@ CREATE TABLE IF NOT EXISTS `menu` (
 --
 
 INSERT INTO `menu` (`menu_id`, `label`, `link`, `target`, `sort`) VALUES
-(2, 'Асуулт нэмэх', '../menu/add_question.php', 'SELF', 1),
-(3, 'Хариулт нэмэх', '../menu/add_answer.php', 'SELF', 2),
-(4, 'Нийтлэг шинж', '../menu/common_symptoms.php', 'SELF', 3),
-(5, 'Өвөрмөц шинж', '../menu/unique_symptoms.php', 'SELF', 4),
-(6, 'Удирдах самбар', '../menu/dashboard.php', 'SELF', 0);
+(2, 'Өвчний эмнэлзүйн нийтлэг шинжийн асуулт бүртгэх', '../menu/add_question.php', 'SELF', 1),
+(3, 'Өвчний эмнэлзүйн нийтлэг шинжийн хариулт бүртгэх', '../menu/add_answer.php', 'SELF', 2),
+(4, 'Өвчнийг эмнэлзүйн нийтлэг шинжээр оношлох', '../menu/common_symptoms.php', 'SELF', 3),
+(5, 'Өвчнийг эмнэлзүйн өвөрмөц шинжээр оношлох', '../menu/unique_symptoms.php', 'SELF', 4),
+(6, 'Тандан судлах', '../menu/dashboard.php', 'SELF', 0);
 
 -- --------------------------------------------------------
 

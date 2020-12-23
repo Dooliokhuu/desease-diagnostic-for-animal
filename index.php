@@ -10,6 +10,6 @@
 		} else {
 			require_once 'asset/functions/login.php';
 		};
-		require_once 'footer.php'; 
+	require_once 'footer.php'; 
 	?>
 </html>

@@ -10,7 +10,7 @@
 	<div class="container h-100">
 		<form class="form-signin" method="post" action="asset/functions/auth.php">
 			  <img class="mb-4" src="images/logo_haais.png" alt="" width="72" height="72">
-			  <h1 class="h3 mb-3 font-weight-normal">Нэвтэрж орно уу</h1>
+			  <h1 class="h3 mb-3 font-weight-normal">Нэвтрэх хэсэг</h1>
 			  <label for="username" class="sr-only">Нэвтрэх нэр</label>
 			  <input name="username" type="username" id="inputUsername" class="form-control" placeholder="Нэвтрэх нэр" required="" autofocus="">
 			  <label for="password" class="sr-only">Нууц үг</label>
